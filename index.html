@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <title>Entrega Javascript</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-dark bg-dark" style="display: flex !important;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="display: flex; align-items: center;">
+          <img src="codoacodo.png" alt="" width="80" height="60" class="d-inline-block align-text-top">
+          <h1 style="font-size: large;">Conf Bs As</h1>
+        </a>
+        <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+        <a class="nav-link grey">Los oradores</a>
+        <a class="nav-link grey">El lugar y la fecha</a>
+        <a class="nav-link grey">Conviértete en un orador</a>
+        <a class="nav-link verde">Comprar tickets</a>
+      </div>
+
+    </nav>
+
+
+    <!--                                  Medio     -->
+    <div class="medio">
+
+      <!--                                Tipos     -->
+      <div class="descuentos">
+        <div class="card estudiante" style="width: 18rem;">
+          <div class="card-body" style="margin-bottom: 10%;">
+            <h5 class="card-title">Estudiante</h5>
+            <h6 class="card-subtitle mb-2" style="margin-bottom: 10%;">Tienen un descuento</h6>
+            <p class="card-text bold" style="margin-bottom: 10%;">80%</p>
+            <h6 class="card-subtitle mb-2 text-muted" >* presentar documentación</h6>
+          </div>
+        </div>
+        <div class="card trainee" style="width: 18rem;">
+          <div class="card-body" style="margin-bottom: 10%;">
+            <h5 class="card-title">Trainee</h5>
+            <h6 class="card-subtitle mb-2" style="margin-bottom: 10%;">Tienen un descuento</h6>
+            <p class="card-text bold" style="margin-bottom: 10%;">50%</p>
+            <h6 class="card-subtitle mb-2 text-muted">* presentar documentación</h6>
+          </div>
+        </div>
+        <div class="card junior" style="width: 18rem;">
+          <div class="card-body" style="margin-bottom: 10%;">
+            <h5 class="card-title">Junior</h5>
+            <h6 class="card-subtitle mb-2" style="margin-bottom: 10%;">Tienen un descuento</h6>
+            <p class="card-text bold" style="margin-bottom: 10%;">15%</p>
+            <h6 class="card-subtitle mb-2 text-muted">* presentar documentación</h6>
+          </div>
+        </div>
+      </div>
+      <!--                                Títulos     -->
+      <h6 style="text-align: center;">VENTAS</h6>
+      <h1 style="text-align: center;">VALOR DEL TICKET $200</h1>
+
+      <!--                                Formulario  -->
+      <div class="formulario">
+
+
+      <form>
+        <div class="row">
+          <div class="col ff">
+            <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" id="nombre">
+          </div>
+          <div class="col ff">
+            <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" id="apellido">
+          </div>
+        </div>
+        <div class="col-12 ff">
+          <input type="text" class="form-control" id="email" placeholder="Correo">
+        </div>
+        <div style="display: flex;">
+          <div class="col-md-6 ff" style="padding-right: 1%;">
+            <label for="inputCity" class="form-label">Cantidad</label>
+            <input type="number" placeholder="cantidad" class="form-control ff" id="cantidad_tickets">
+          </div>
+          <div class="col-md-6 ff" style="padding-left: 2%;">
+            <label for="inputState" class="form-label">Categoria</label>
+            <select id="inputState" class="form-select ff">
+              <option value="estudiante">Estudiante</option>
+              <option value="trainee">Trainee</option>
+              <option value="junior">Junior</option>
+              <option value="ninguna" selected>Ninguna</option>
+            </select>
+          </div>
+        </div>
+      </form>
+
+      </div>
+      <!--            PRECIO      -->
+      <div class="alert alert-primary" role="alert">
+        Total a pagar: $<span id="precio"></span>
+      </div>
+      <!--            BOTONES      -->
+      <div class="botones">
+        <button class="btn btn-primary col-6" type="button" style="margin-right: 1%;" id="borrar">Borrar</button>
+        <button class="btn btn-primary col-6" type="button" id="resumen">Resumen</button>
+      </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <!--                                  FOOTER        -->
+    <ul class="nav justify-content-center" style="background: rgb(28,54,67);
+    background: linear-gradient(62deg, rgba(28,54,67,1) 0%, rgba(30,83,114,1) 35%); min-height: 80px !important;">
+      <li class="nav-item">
+        <a class="nav-link active no-link" aria-current="page" href="#">Preguntas Frecuentes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link no-link" href="#">Contactanos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link no-link" href="#">Prensa</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link no-link" href="#">Conferencias</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link no-link" href="#">Términos y condiciones</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link no-link" href="#">Privacidad</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link no-link">Estudiantes</a>
+      </li>
+    </ul>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+
+  <script src="functions.js"></script>
+</html>
+
+
